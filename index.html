@@ -49,6 +49,21 @@
             <!-- ***** Logo Start ***** -->
             <a href="index.html" class="logo">
               MFarelS
+              <br><h5>Waktu: <span id="tanggalwaktu"></span><h5>
+
+<script>
+var tw = new Date();
+if (tw.getTimezoneOffset() == 0) (a=tw.getTime() + ( 7 *60*60*1000))
+else (a=tw.getTime());
+tw.setTime(a);
+var tahun= tw.getFullYear ();
+var hari= tw.getDay ();
+var bulan= tw.getMonth ();
+var tanggal= tw.getDate ();
+var hariarray=new Array("Minggu,","Senin,","Selasa,","Rabu,","Kamis,","Jum'at,","Sabtu,");
+var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember");
+document.getElementById("tanggalwaktu").innerHTML = hariarray[hari]+" "+tanggal+" "+bulanarray[bulan]+" "+tahun+" Jam " + ((tw.getHours() < 10) ? "0" : "") + tw.getHours() + ":" + ((tw.getMinutes() < 10)? "0" : "") + tw.getMinutes() + (" W.I.B ");
+</script>
             </a>
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
@@ -84,9 +99,9 @@
             data-scroll-reveal-initialized="true" data-scroll-reveal-complete="true">
             <h1>Rajin Nulis <em>.</em></h1>
             <p>Lagi Ga Mood Nulis Offline? .
-              Mending Nulis Online Pake Rajin Nulis
-              Rajin Nulis Merupakan Website Nulis Online Otomatis Bagi Kalian Yang Mager Nulis Di Kertas
-              Rajin Nulis Ini Di Buat Oleh MFarelS❤️</p>
+              <br>Mending Nulis Online Pake Rajin Nulis
+              <br>Rajin Nulis Merupakan Website Nulis Online Otomatis Bagi Kalian Yang Mager Nulis Di Kertas
+              <br>Rajin Nulis Ini Di Buat Oleh MFarelS❤️</p>
             <a href="#GassNulis" class="main-button-slider">Gass Nulis</a>
           </div>
         </div>
